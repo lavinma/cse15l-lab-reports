@@ -9,7 +9,7 @@ The first command is an example of the `cd` command being used with no arguments
 <br/> The second command is an example of the `cd` commaand being used with a *directory* as an argument.
    When the command was run, the working directory was `lecturel` because the cd command changed the current directory, `home`, to 
    the argument, `lecture1`. The output is not an error.
-The third command is an example of the `cd` command with a path to a *file* as an argument.
+<br/> The third command is an example of the `cd` command with a path to a *file* as an argument.
    When the command was run, the working directory was still `lecture1` because the argument being a path to a file is not correct. 
    The arguments given to the `cd` command can only be directories, not files. The command outputted an error because of this. 
 
