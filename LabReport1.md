@@ -14,9 +14,9 @@ The **first** command is an example of the `cd` command with no arguments.
 ## `ls` command
 <img width="1216" alt="Screen Shot 2024-01-15 at 1 05 53 PM" src="https://github.com/lavinma/cse15l-lab-reports/assets/156377218/7135e005-2768-4683-9917-73688099eb09">
 
-The **first** command is an example of the `ls` command with no argument. `home` was the working directory when the command was run. The output in the system was `lecture1`, meaning that it is the folder in the given path. Because there was no argument given to the command, the path it looked in was where it already was, this case being `home`.
+The **first** command is an example of the `ls` command with no argument. `home` was the working directory when the command was run. The output in the system was `lecture1`, meaning that it is the folder in the given path. Because there was no argument given to the command, the path the command looked in was where it already was, this case being `home`. There was no error.
 <br/> The **second** command is an example of the `ls` command with a *directory* as an argument. When this command was run, the working directory was still `home`, but since there is now an argument in front of the `ls` command, it is being told to look specifically into one path for the files and folders in it. So, the output was a list of the files and folders in `lecture1`. This output was not an error.
-<br/> The **third** command is an example of the `ls` command with a path to a *file* as an argument. The working directory is still `home`. My output this time was odd and appears to be an error. It printed out the path given in the argument but that is not what the `ls` command is supposed to do. It is supposed to print out all the files and folders in the given path, not the path itself.
+<br/> The **third** command is an example of the `ls` command with a path to a *file* as an argument. The working directory is still `home`. My output this time was an error. It printed out the path given in the argument but that is not what the `ls` command is supposed to do. It is supposed to print out all the files and folders in the given path, not the path itself.
    
 
 ## `cat` command
