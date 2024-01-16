@@ -1,7 +1,7 @@
 # Lab Report 1 - Remote Access and FileSystem (Week 1)
 
 ## `cd` command
-![Image 1-15-24 at 11 14 AM](https://github.com/lavinma/cse15l-lab-reports/assets/156377218/f217a889-99cd-4c73-8b8b-d1253ee5e86c)
+![Image](cdCommand.png)
 
 The **first** command is an example of the `cd` command with no arguments. 
    When that command was run, the working directory was `home`. The working directory did not change when I ran the command because no argument was present in the command line, meaning it wasn't told what directory to change to. There was no output error.
