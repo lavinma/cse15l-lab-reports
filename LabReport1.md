@@ -19,7 +19,7 @@ The **first** command is an example of the `ls` command with no argument. `home`
    
 
 ## `cat` command
-![Image](catCommand.png)
+![Image](commandCat.png)
 
 The **first** command is an example of the `cat` command with no arguments. `home` was the working directory as this command ran. The output produced errors because the command was given nothing to read. So instead anything typed after the intial no argument would be returned back in the terminal. To leave this command, I had to manually do control C.
 <br/> The **second** command is an example of the `cat` command with a *directory* as an argument. The working directory was still `home` when this command was run. The output produced an error because the argument given was a directory and the `cat` command reads files, so it needs to be given a specific path to a file, not one just ending at a directory.
