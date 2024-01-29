@@ -9,3 +9,5 @@
 
 <br/>
 ## Part 2
+![Image](absPath2PubKey.jpeg)
+The image above depicts the absolute path to the private key for my SSH key logging into `ieng6`.
