@@ -9,7 +9,7 @@
 
 <br/>
 ## Part 2
-<br/>![Image](PrivateKey.jpeg)
+<br/>![Image](PrivKey.jpeg)
 The image above depicts the absolute path, `/home/linux/ieng6/oce/0h/lam009`, to the private key for my SSH key logging into `ieng6`.
 
 <br/><br/>![Image](PubKey.jpeg)
