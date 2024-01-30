@@ -12,6 +12,9 @@
 
 ![Image](PrivAndPubKey.jpeg)
 <br/>The image above depicts the absolute path, `/home/linux/ieng6/oce/0h/lam009/.ssh/id_rsa`, to the private key for my SSH key logging into `ieng6` and the absolute path, `/home/linux/ieng6/oce/0h/lam009/.ssh/id_rsa.pub `, to the public key for my SSH key logging into `ieng6`.
+<br/>
+![Image](noPassword.jpeg)
+<br/>The image above depicts a terminal interaction I had where I did not have to enter in the password when using the `ssh` command.
 
 <br/><br/>
 ## Part 3
