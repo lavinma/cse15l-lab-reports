@@ -10,11 +10,8 @@
 <br/><br/>
 ## Part 2
 
-![Image](PubKey.jpeg)
-<br/>The image above depicts the absolute path, `/home/linux/ieng6/oce/0h/lam009`, to the private key for my SSH key logging into `ieng6`.
-
-<br/>![Image](PubKey.jpeg)
-The image above depicts the absolute path, `/home/linux/ieng6/oce/0h/lam009 `, to the private key for my SSH key logging into `ieng6`.
+![Image](PrivAndPubKey.jpeg)
+<br/>The image above depicts the absolute path, `/home/linux/ieng6/oce/0h/lam009/.ssh/id_rsa`, to the private key for my SSH key logging into `ieng6` and the absolute path, `/home/linux/ieng6/oce/0h/lam009/.ssh/id_rsa.pub `, to the public key for my SSH key logging into `ieng6`.
 
 <br/><br/>
 ## Part 3
