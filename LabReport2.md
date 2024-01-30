@@ -7,11 +7,15 @@
 <br/><br/>![Image](ChatServerEX2.png)
 <br/>For this screenshot, the HandleRequest method in the Handler class was called. The URL was the argument to this method and the same fields remained, a words String ArrayList and a result String. However, only one of the fields are empty now. The ArrayList has the previous message in it and doesn't update till the method runs and adds the new message to it, but the result String is empty, waiting for the updated ArrayList to be appended to it. The URI parameter changes to the new URL as the method is called.
 
-<br/>
+<br/><br/>
 ## Part 2
 
 ![Image](PubKey.jpeg)
 <br/>The image above depicts the absolute path, `/home/linux/ieng6/oce/0h/lam009`, to the private key for my SSH key logging into `ieng6`.
 
-<br/><br/>![Image](PubKey.jpeg)
+<br/>![Image](PubKey.jpeg)
 The image above depicts the absolute path, `/home/linux/ieng6/oce/0h/lam009 `, to the private key for my SSH key logging into `ieng6`.
+
+<br/><br/>
+## Part 3
+<br/>I learned about the `ssh` command which I had no idea of before. I learned how we can connect to different servers to execute programs. I also learned how to open browsers linked to specific ports depending on what I type in the terminal.
