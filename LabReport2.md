@@ -15,6 +15,9 @@
 <br/>
 ![Image](noPassword.jpeg)
 <br/>The image above depicts a terminal interaction I had where I did not have to enter in the password when using the `ssh` command.
+<br/>
+![Image](absPath.jpeg)
+<br/>The image above shows the absolute path of the public and private key once I am logged into `ieng6`.
 
 <br/><br/>
 ## Part 3
