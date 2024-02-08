@@ -10,4 +10,22 @@ static void reverseInPlace(int[] arr) {
   }
 }
 ```
-A failure-inducing input for a buggy program. 
+A failure-inducing input for the `reverseInPlace()` method:
+```
+@Test
+public void testReverseInPlace2() {
+  int[] input = {1, 2, 3};
+  ArrayExamples.reverseInPlace(input);
+  assertArrayEquals(new int[] {3, 2, 1}, input);
+}
+```
+An input that does not induce a failure for the `reverseInPlace()` method:
+```
+@Test 
+public void testReverseInPlace() {
+  int[] input1 = { 3 };
+  ArrayExamples.reverseInPlace(input1);
+  assertArrayEquals(new int[]{ 3 }, input1);
+}
+```
+
