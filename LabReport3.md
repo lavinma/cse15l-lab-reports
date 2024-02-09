@@ -28,4 +28,6 @@ public void testReverseInPlace() {
   assertArrayEquals(new int[]{ 3 }, input1);
 }
 ```
+The symptom (the output of running the tests above):
+
 
