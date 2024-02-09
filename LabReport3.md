@@ -29,5 +29,6 @@ public void testReverseInPlace() {
 }
 ```
 The symptom (the output of running the tests above):
-
+![Image](symptomBug.jpeg)
+<br/>The failure-inducing test can be seen above and the input that does not induce a visible failure is one of the 3 tests that passed.
 
