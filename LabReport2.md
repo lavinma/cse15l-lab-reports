@@ -23,5 +23,3 @@
 ## Part 3
 <br/>I learned about the `ssh` command which I had no idea of before. I learned how we can connect to different servers to execute programs and how to switch the server I am connected to because it was a malfunctioning one. I also learned how to open browsers linked to specific ports depending on what I type in the terminal.
 
-<br/> 
-The image above depicts the absolute path, `/home/linux/ieng6/oce/0h/lam009/.ssh/id_rsa`, to the private key for my SSH key logging into `ieng6` and the absolute path, `/home/linux/ieng6/oce/0h/lam009/.ssh/id_rsa.pub `, to the public key for my SSH key logging into `ieng6`.
