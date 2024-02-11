@@ -55,4 +55,17 @@ static void reverseInPlace(int[] arr) {
 Previously, only the first half of the array was being successfully reversed and the second half of the array remained the same. This was because the for loop didn't take into account the array being updated (reversed) while the for loop ran. This code change fixes the issue of the array not being reversed properly because when the original array is being reversed now, it doesn't modify itself as it refers to its copy for the correct elements.
 
 ## Part 2 - Researching Commands
-
+I will find 4 alternating ways to use the `find` command
+1. `ls -R /path/to/search | grep "filename"` command: 
+```
+lavin@Lavins-MacBook-Air docsearch % ls -R technical/911report/ | grep "chapter-1.txt"
+chapter-1.txt
+```
+```
+lavin@Lavins-MacBook-Air docsearch % ls -R technical/911report/ | grep "chapter-2.txt"
+chapter-2.txt
+```
+This command is useful because 
+3. `locate` command - 
+4. 
+5. 
