@@ -66,8 +66,18 @@ lavin@Lavins-MacBook-Air docsearch % ls -R technical/911report/ | grep "chapter-
 chapter-2.txt
 ```
 This command is useful because it can find the files with a specific text you are looking for quickly. The `s -R /path/to/search` recursively lists all the files/directories from the path given. Then the output is passed as an input to the next part through the pipe operator, `|`. The next part, `grep "filename"` searches for the lines containing the text "filename" and displays those lines. 
-The prompt I gave chatGPT is shown below:
+<br/>The prompt I gave chatGPT is shown below:
 ![Image](chatGPT1.png)
-3. `locate` command - 
-4. 
-5. 
+2. `ls -R /path/to/search | awk '/filename/'` command - 
+```
+lavin@Lavins-MacBook-Air docsearch % ls -R technical/911report | awk '/chapter-8.txt/'
+```
+```
+chapter-8.txt
+lavin@Lavins-MacBook-Air docsearch % ls -R technical/911report | awk '/preface/'      
+preface.txt
+```
+This command is useful because it find the output in a straightforward manner and is easy to understand when seeing it being performed in the terminal. The `ls -R /path/to/search` recursively outputs a list of files and directories under the given path. This output is then passed as an input to the next part with the pipe operator, `|`. The `awk '/filename/'` portion of the command searches through the given input from the previous part for strings containing "filename" and prints the output.
+<br/>The prompt I gave chatGPT is shown below:
+![Image](chatGPT2.png)
+3. 
