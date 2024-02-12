@@ -108,7 +108,7 @@ technical/911report
 ```
 This command is useful because it searches through the given directory but only prints all the files and directories to the specified depth. The `-depth +num` part is how deep into the given directory files and directories are searched for. This allows for a new way of finding and printing files/directories and can be useful in scenarios where you don't need to search fully into subdirectories.
 <br/>I found this command through the `man find` command line in the terminal. 
-4. `find /path/to/directory \! -name "whatFileDoesNotEndIn" -print` command:
+<br/>4. `find /path/to/directory \! -name "whatFileDoesNotEndIn" -print` command:
  ```
 lavin@Lavins-MacBook-Air docsearch % find technical/911report \! -name "*.c" -print 
 technical/911report
