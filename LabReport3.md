@@ -65,7 +65,8 @@ chapter-1.txt
 lavin@Lavins-MacBook-Air docsearch % ls -R technical/911report/ | grep "chapter-2.txt"
 chapter-2.txt
 ```
-This command is useful because 
+This command is useful because it can find the files with a specific text you are looking for quickly. The `s -R /path/to/search` recursively lists all the files/directories from the path given. Then the output is passed as an input to the next part through the pipe operator, `|`. The next part, `grep "filename"` searches for the lines containing the text "filename" and displays those lines. 
+(
 3. `locate` command - 
 4. 
 5. 
