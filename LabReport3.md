@@ -80,4 +80,5 @@ preface.txt
 This command is useful because it find the output in a straightforward manner and is easy to understand when seeing it being performed in the terminal. The `ls -R /path/to/search` recursively outputs a list of files and directories under the given path. This output is then passed as an input to the next part with the pipe operator, `|`. The `awk '/filename/'` portion of the command searches through the given input from the previous part for strings containing "filename" and prints the output.
 <br/>The prompt I gave chatGPT is shown below:
 ![Image](chatGPT2.png)
+![Image](chatGPT2.5.png)
 3. 
