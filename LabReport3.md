@@ -81,18 +81,33 @@ This command is useful because it find the output in a straightforward manner an
 <br/>The prompt I gave chatGPT is shown below:
 ![Image](chatGPT2.png)
 ![Image](chatGPT2.5.png)
-3. `find /path/to/directory -type f -name "filename"` command:
+3. `find /path/to/directory -depth +num -print` command:
 ```
-lavin@Lavins-MacBook-Air docsearch % find technical/911report -type f -name "chapter-9.txt"
-
-technical/911report/chapter-9.txt
-```
-```
-lavin@Lavins-MacBook-Air docsearch % find technical/911report -type f -name "chapter-6.txt"
-
+lavin@Lavins-MacBook-Air docsearch %   find technical/911report -depth +0 -print 
+technical/911report/chapter-13.4.txt
+technical/911report/chapter-13.5.txt
+technical/911report/chapter-13.1.txt
+technical/911report/chapter-13.2.txt
+technical/911report/chapter-13.3.txt
+technical/911report/chapter-3.txt
+technical/911report/chapter-2.txt
+technical/911report/chapter-1.txt
+technical/911report/chapter-5.txt
 technical/911report/chapter-6.txt
+technical/911report/chapter-7.txt
+technical/911report/chapter-9.txt
+technical/911report/chapter-8.txt
+technical/911report/preface.txt
+technical/911report/chapter-12.txt
+technical/911report/chapter-10.txt
+technical/911report/chapter-11.txt
 ```
-This command is useful because it can list all the files in the root directory. In the code blocks above, I specified my desired path to search within for the "filename".
+```
+lavin@Lavins-MacBook-Air docsearch %   find technical/911report -depth -1 -print
+technical/911report
+```
+This command is useful because it searches through the given directory but only prints all the files and directories to the specified depth. The `-depth +num` part is how deep into the given directory files and directories are searched for. This allows for a new way of finding and printing files/directories and can be useful in scenarios where you don't need to search fully into subdirectories.
+<br/>I found this command through the `man find` command line in the terminal. 
 4. `find /path/to/directory \! -name "whatFileDoesNotEndIn" -print` command:
  ```
 lavin@Lavins-MacBook-Air docsearch % find technical/911report \! -name "*.c" -print 
