@@ -68,7 +68,7 @@ chapter-2.txt
 This command is useful because it can find the files with a specific text you are looking for quickly. The `s -R /path/to/search` recursively lists all the files/directories from the path given. Then the output is passed as an input to the next part through the pipe operator, `|`. The next part, `grep "filename"` searches for the lines containing the text "filename" and displays those lines. 
 <br/>The prompt I gave chatGPT is shown below:
 ![Image](chatGPT1.png)
-2. `ls -R /path/to/search | awk '/filename/'` command - 
+2. `ls -R /path/to/search | awk '/filename/'` command:
 ```
 lavin@Lavins-MacBook-Air docsearch % ls -R technical/911report | awk '/chapter-8.txt/'
 ```
@@ -81,4 +81,47 @@ This command is useful because it find the output in a straightforward manner an
 <br/>The prompt I gave chatGPT is shown below:
 ![Image](chatGPT2.png)
 ![Image](chatGPT2.5.png)
-3. 
+3. `find /path/to/directory -type f -name "filename"` command:
+```
+lavin@Lavins-MacBook-Air docsearch % find technical/911report -type f -name "chapter-9.txt"
+
+technical/911report/chapter-9.txt
+```
+```
+lavin@Lavins-MacBook-Air docsearch % find technical/911report -type f -name "chapter-6.txt"
+
+technical/911report/chapter-6.txt
+```
+This command is useful because it can list all the files in the root directory. In the code blocks above, I specified my desired path to search within for the "filename".
+4. `find /path/to/directory \! -name "whatFileDoesNotEndIn" -print` command:
+ ```
+lavin@Lavins-MacBook-Air docsearch % find technical/911report \! -name "*.c" -print 
+technical/911report
+technical/911report/chapter-13.4.txt
+technical/911report/chapter-13.5.txt
+technical/911report/chapter-13.1.txt
+technical/911report/chapter-13.2.txt
+technical/911report/chapter-13.3.txt
+technical/911report/chapter-3.txt
+technical/911report/chapter-2.txt
+technical/911report/chapter-1.txt
+technical/911report/chapter-5.txt
+technical/911report/chapter-6.txt
+technical/911report/chapter-7.txt
+technical/911report/chapter-9.txt
+technical/911report/chapter-8.txt
+technical/911report/preface.txt
+technical/911report/chapter-12.txt
+technical/911report/chapter-10.txt
+technical/911report/chapter-11.txt
+```
+```
+lavin@Lavins-MacBook-Air docsearch % find technical/government/Alcohol_Problems \! -name "*.c" -print   
+technical/government/Alcohol_Problems
+technical/government/Alcohol_Problems/Session2-PDF.txt
+technical/government/Alcohol_Problems/Session3-PDF.txt
+technical/government/Alcohol_Problems/DraftRecom-PDF.txt
+technical/government/Alcohol_Problems/Session4-PDF.txt
+```
+This command is useful because it prints out a list of all the files in the given path that does not end in what given in quotes. It's a nice new way to use the `find` command because you are able to now able to search for files that aren't something instead of being limited to only searching for files that contain a specific string.
+<br/>I found this command through the `man find` command line in the terminal. 
