@@ -55,33 +55,60 @@ static void reverseInPlace(int[] arr) {
 Previously, only the first half of the array was being successfully reversed and the second half of the array remained the same. This was because the for loop didn't take into account the array being updated (reversed) while the for loop ran. This code change fixes the issue of the array not being reversed properly because when the original array is being reversed now, it doesn't modify itself as it refers to its copy for the correct elements.
 
 ## Part 2 - Researching Commands
-I will find 4 alternating ways to use the `find` command
-1. `ls -R /path/to/search | grep "filename"` command: 
+I will find 4 new ways to use the `find` command
+1. `find /path/to/search -type <file_type>` command:
 ```
-lavin@Lavins-MacBook-Air docsearch % ls -R technical/911report/ | grep "chapter-1.txt"
-chapter-1.txt
+lavin@Lavins-MacBook-Air docsearch % find . -type d
+.
+./lib
+./.git
+./.git/objects
+./.git/objects/pack
+./.git/objects/info
+./.git/info
+./.git/logs
+./.git/logs/refs
+./.git/logs/refs/heads
+./.git/logs/refs/remotes
+./.git/logs/refs/remotes/origin
+./.git/hooks
+./.git/refs
+./.git/refs/heads
+./.git/refs/tags
+./.git/refs/remotes
+./.git/refs/remotes/origin
+./technical
+./technical/government
+./technical/government/About_LSC
+./technical/government/Env_Prot_Agen
+./technical/government/Alcohol_Problems
+./technical/government/Gen_Account_Office
+./technical/government/Post_Rate_Comm
+./technical/government/Media
+./technical/plos
+./technical/biomed
+./technical/911report
 ```
 ```
-lavin@Lavins-MacBook-Air docsearch % ls -R technical/911report/ | grep "chapter-2.txt"
-chapter-2.txt
+lavin@Lavins-MacBook-Air docsearch % find . -type s
+lavin@Lavins-MacBook-Air docsearch % 
 ```
-This command is useful because it can find the files with a specific text you are looking for quickly. The `s -R /path/to/search` recursively lists all the files/directories from the path given. Then the output is passed as an input to the next part through the pipe operator, `|`. The next part, `grep "filename"` searches for the lines containing the text "filename" and displays those lines. 
-<br/>The prompt I gave chatGPT is shown below:
-![Image](chatGPT1.png)
-2. `ls -R /path/to/search | awk '/filename/'` command:
+This command is useful because  it searches through the given path for files of a given type. This allows for a new way to specifically search for files of different types including character special, directories, simple files, and more. I can also see if there isn't files of a specific type (shown in the second example where no files paths are printed).
+<br/>I found this command through the `man find` command line in the terminal. 
+<br/>2. `find /path/to/search -empty` command:
 ```
-lavin@Lavins-MacBook-Air docsearch % ls -R technical/911report | awk '/chapter-8.txt/'
+lavin@Lavins-MacBook-Air docsearch % find . -empty               
+./.git/objects/info
+./.git/refs/tags
+./grep-results.txt
 ```
 ```
-chapter-8.txt
-lavin@Lavins-MacBook-Air docsearch % ls -R technical/911report | awk '/preface/'      
-preface.txt
+lavin@Lavins-MacBook-Air docsearch % find technical  -empty
+lavin@Lavins-MacBook-Air docsearch %
 ```
-This command is useful because it find the output in a straightforward manner and is easy to understand when seeing it being performed in the terminal. The `ls -R /path/to/search` recursively outputs a list of files and directories under the given path. This output is then passed as an input to the next part with the pipe operator, `|`. The `awk '/filename/'` portion of the command searches through the given input from the previous part for strings containing "filename" and prints the output.
-<br/>The prompt I gave chatGPT is shown below:
-![Image](chatGPT2.png)
-![Image](chatGPT2.5.png)
-3. `find /path/to/directory -depth +num -print` command:
+This command is useful because I can find in a short amount of time the files that are empty. The command shows me the exact paths to all empty files in the given path I want to search. And, when there are no empty files, nothing is printed (as shown in the second example). 
+<br/>I found this command through the `man find` command line in the terminal.
+<br/>3. `find /path/to/directory -depth +num -print` command:
 ```
 lavin@Lavins-MacBook-Air docsearch %   find technical/911report -depth +0 -print 
 technical/911report/chapter-13.4.txt
