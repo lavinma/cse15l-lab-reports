@@ -4,7 +4,7 @@
 
 <br/><br/>Clone your fork of the repository from your Github account (using the SSH URL):
 
-<br/><br/>Run the tests, demonstrating that they fail:
+<br/>Run the tests, demonstrating that they fail:
 
 <br/><br/>Edit the code file to fix the failing test:
 
