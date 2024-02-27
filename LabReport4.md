@@ -2,7 +2,7 @@
 ![Image](loginSSH.png)
 <br/>Logging into ieng6: The keys I used to get to this point were `ssh<space>lam009@ieng6-202.ucsd.edu<enter>`. I typed that all into the terminal and was able to connect to the `ieng6` server with the `ssh` command using my UCSD specific login information. The `ssh` command stands for secure shell and connects two devices (in my case my computer to a server).
 
-![Image](cloneLab7.jpeg)
+![Image](cloneLab7.png)
 Cloned my fork of the repository from my Github account (using the SSH URL): The keys I used to get here were `git<space>clone<space>git@github.com:lavinma/lab7.git<enter>`. (The last part is the SSH URL.) I typed that into the terminal and was able to create a copy of my remote Github repository onto my computer with the  `git clone` command.
 
 ![Image](Lab7FailingTests.png)
