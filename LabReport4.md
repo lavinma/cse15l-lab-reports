@@ -5,7 +5,7 @@
 ![Image](cloneLab7.png)
 Cloned my fork of the repository from my Github account (using the SSH URL): The keys I used to get here were `git<space>clone<space>git@github.com:lavinma/lab7.git<enter>`. (The last part is the SSH URL.) I typed that into the terminal and was able to create a copy of my remote Github repository onto my computer with the  `git clone` command.
 
-![Image](Lab7FailingTests.png)
+![Image](Lab7Fail.png)
 Run the tests, demonstrating that they fail: The keys I used to get here were `bash<space>test.sh`. This ran the bash file that contained the commands to compile and run the `ListExamplesTests.java` file.
 
 ![Image](vimEditing.jpeg)
