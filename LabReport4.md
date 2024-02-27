@@ -1,5 +1,5 @@
 # Lab Report 4 - Vim (Week 7)
-![Image](sshLogin.png)
+![Image](loginSSH.png)
 <br/>Logging into ieng6: The keys I used to get to this point were `ssh<space>lam009@ieng6-202.ucsd.edu<enter>`. I typed that all into the terminal and was able to connect to the `ieng6` server with the `ssh` command using my UCSD specific login information. The `ssh` command stands for secure shell and connects two devices (in my case my computer to a server).
 
 ![Image](Lab7Clone.jpeg)
