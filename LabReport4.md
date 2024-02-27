@@ -6,7 +6,7 @@
 Cloned my fork of the repository from my Github account (using the SSH URL): The keys I used to get here were `git<space>clone<space>git@github.com:lavinma/lab7.git<enter>`. (The last part is the SSH URL.) I typed that into the terminal and was able to create a copy of my remote Github repository onto my computer with the  `git clone` command.
 
 ![Image](Lab7Fail.png)
-Run the tests, demonstrating that they fail: The keys I used to get here were `bash<space>test.sh`. This ran the bash file that contained the commands to compile and run the `ListExamplesTests.java` file. It tested the code before I made edits in it through `vim`.
+Run the tests, demonstrating that they fail: The keys I used to get here were `bash<space>test.sh<enter>`. This ran the bash file that contained the commands to compile and run the `ListExamplesTests.java` file. It tested the code before I made edits in it through `vim`.
 <br/>Note: In order to access this bash script file, I had to change my directory to get there. I had to use the `cd lab7/` command line.
 
 ![Image](vimEdits.jpeg)
@@ -14,6 +14,7 @@ Edit the code file to fix the failing test: To fix the failing test I had to go 
 <br/>Note: The image above depicts my code right before I pressed `<enter>` after I typed the `:wq` to save and exit. 
 
 ![Image](Lab7Success.png)
-Run the tests, demonstrating that they now succeed: The keys I used to get here were `bash<space>test.sh`. This ran the bash file that contained the commands that would compile and run the `ListExamplesTests.java` file. It tested my edited code and now all the tests ran successfully, showing I made the correct changes to the code and it saved.
+Run the tests, demonstrating that they now succeed: The keys I used to get here were `bash<space>test.sh<enter>`. This ran the bash file that contained the commands that would compile and run the `ListExamplesTests.java` file. It tested my edited code and now all the tests ran successfully, showing I made the correct changes to the code and it saved.
 
-Commit and push the resulting change to my Github account:
+![Image](Lab7CommitAndPush.png)
+Commit and push the resulting change to my Github account: I used three commands in this final part. For the first command, I used the following keys: `git add .<enter>`. This command added all the changes I made in the directory and subdirectories to the staging area where Git prepares the changes to be committed. For the second command, I used the following keys: `git commit -m "Updated code to run without error"<enter>`. This command allowed me to have a commit message where I could describe the changes and updated I made in the code. For the third command, I used the following keys: `git push`. This command pushes all the changes I made to Github, so everything is updated between my local and remote repositories. 
