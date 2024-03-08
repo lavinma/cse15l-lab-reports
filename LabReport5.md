@@ -2,3 +2,4 @@
 
 ## Part 1 - Debugging Scenario
 Original post from student depicting symptom and their intepretation of the bug/failure-inducing input:
+![Image](OrigSymptom.jpeg)
