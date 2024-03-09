@@ -3,15 +3,14 @@
 ## Part 1 - Debugging Scenario
 Original post from student depicting symptom and their intepretation of the bug/failure-inducing input:
 ![Image](OrigPost.jpeg)
+![Image](CompilingBash.jpeg)
 "I am having issues with my implementation of the reversed() method. It is supposed to return a new array with the elements of the input array in reverse order. My test case (shown above) told me that the first element in my return array differs from my expected array. Originally I thought I returned the array with the elements in the original order, but my test case shows that the element at the first index is 0, which isn't even an element ever in my input array. I can see that the failure-inducing input is my test case named testReversed2(), but I am still unsure of what the bug may be."
 
-<br/>
 TA response:
 "Have you tried fully printing out the returned array you get from calling reversed()? Perhaps that could help you with debugging and fixing your method implementation."
 
-<br/>
 Student response:
 ![Image](Post2.jpeg)
-"I tried your suggestion and I have a good idea of what my bug is now! Thanks!! Since the outpute I am getting from the method call is an array with 0 as each of its four elements, I can see now that the bug is I am returning an array that is never initialized to anything." 
+"I tried your suggestion and I have a good idea of what my bug is now! Thanks!! Since the outpute I am getting from the method call is an array with 0 as each of its four elements, I can see now that the bug is I am returning an array that is never initialized to anything. I took another look at my method implementation and noticed that a few different bugs. First, I am setting my input array to the reversed order of elements of the new array I initialized. Second, I am returning my input array instead of the new array I initialized." 
 
 
