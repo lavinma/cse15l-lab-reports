@@ -11,7 +11,7 @@ TA response:
 
 <br/>
 Student response:
-![Image](ClearSymptom.jpeg)
+![Image](SecondPost.jpeg)
 "I tried your suggestion and I have a good idea of what my bug is now! Thanks!! I can see now that the bug is  I am returning an array that is never initialized to anything. 
 
 
