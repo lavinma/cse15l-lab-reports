@@ -11,7 +11,7 @@ TA response:
 
 <br/>
 Student response:
-<br/>![Image](SecondStudentPost.jpeg)
+![Image](Post2.jpeg)
 "I tried your suggestion and I have a good idea of what my bug is now! Thanks!! Since the outpute I am getting from the method call is an array with 0 as each of its four elements, I can see now that the bug is I am returning an array that is never initialized to anything." 
 
 
