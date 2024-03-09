@@ -2,7 +2,7 @@
 
 ## Part 1 - Debugging Scenario
 Original post from student depicting symptom and their intepretation of the bug/failure-inducing input:
-![Image](OrigSymptom.jpeg)
+![Image](OrigPost.jpeg)
 "I am having issues with my implementation of the reversed() method. It is supposed to return a new array with the elements of the input array in reverse order. My test case (shown above) told me that the first element in my return array differs from my expected array. Originally I thought I returned the array with the elements in the original order, but my test case shows that the element at the first index is 0, which isn't even an element ever in my input array. I can see that the failure-inducing input is my test case named testReversed2(), but I am still unsure of what the bug may be."
 
 <br/>
@@ -11,5 +11,7 @@ TA response:
 
 <br/>
 Student response:
+![Image](ClearSymptom.jpeg)
+"I tried your suggestion and I have a good idea of what my bug is now! Thanks!! I can see now that the bug is  I am returning an array that is never initialized to anything. 
 
 
