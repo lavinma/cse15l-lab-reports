@@ -11,6 +11,6 @@ TA response:
 
 Student response:
 ![Image](Post2.jpeg)
-"I tried your suggestion and I have a good idea of what my bug is now! Thanks!! Since the outpute I am getting from the method call is an array with 0 as each of its four elements, I can see now that the bug is I am returning an array that is never initialized to anything. I took another look at my method implementation and noticed that a few different bugs. First, I am setting my input array to the reversed order of elements of the new array I initialized. Second, I am returning my input array instead of the new array I initialized." 
+"I tried your suggestion and I have a good idea of what my bug is now! Thanks!! Since the outpute I am getting from the method call is an array with 0 as each of its four elements, I can see now that the bug is I am returning an array that is never initialized to anything. I took another look at my method implementation and noticed  a few different bugs. First, I am setting my input array to the reversed order of elements in the new array I initialized (the elements in the new array are all 0). Second, I am returning my input array instead of the new array I initialized. I will fix my bug in the code by setting each element in `newArray` to elements in `arr` (the input array) in reverse order and then return `newArray` at the end of my code." 
 
 
