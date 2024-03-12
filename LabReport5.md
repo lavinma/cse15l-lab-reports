@@ -30,3 +30,6 @@ Student response:
 <br/>First, I am setting my input array to the reversed order of elements in the new array I initialized (the elements in the new array are all 0). Second, I am returning my input array instead of the new array I initialized. I will fix my bug in the code by setting each element in `newArray` to elements in `arr` (the input array) in reverse order and then return `newArray` at the end of my code. (I also attached a screenshot of my updated fixed code!)" 
 
 
+## Part 2 - Reflection
+I learned a lot of new advice from one of my lab group mates. She was a junior and during one lab we talked about classes together and it was really cool hearing her experiences and her plans for the future. Because she was a few years ahead of me, she had new perspectives and advice I was able to use when picking new classes. 
+Learning how to use `vim` was also another thing I really enjoyed and found engaging during lab. That might have been one of my favorite things we did during lab because I thought all the commands we used within `vim` were useful. While, it was a hassle to memorize and get used to the commands and how to edit text, once I got the hang of it, I enjoyed using the tool. I had no idea of such a tool before, so learning about this was fun because I will be able to actually use it in the future.
