@@ -33,21 +33,27 @@ I took another look at my method implementation and noticed a few different bugs
 <br/>Contents of each file before fixing the bug:
 <br/>`ArrayExamples.java`: 
 ```
-static int[] reversed (int [] arr){
-  int[] newArray = new int[arr.length];
-  for (int i = 0; i < arr.length; i += 1){
-    arr[i] = newArray[arr.length- ¡ - 1];
+public class ArrayExamples{
+  static int[] reversed (int [] arr){
+    int[] newArray = new int[arr.length];
+    for (int i = 0; i < arr.length; i += 1){
+      arr[i] = newArray[arr.length- ¡ - 1];
+    }
+    return arr;
   }
-  return arr;
 }
 ```
 `ArrayTests.java`:
 ```
-@Test
-public void testReversed2() {
-  int [] input = {6, 7, 8, 9};
-  int [] output = ArrayExamples.reversed (input);
-  assertArrayEquals (new int[] {9, 8, 7, 6}, output);
+import org.junit.Test;
+import static org.junit.Assert.*;
+public class ArrayTests{
+  @Test
+  public void testReversed2() {
+    int [] input = {6, 7, 8, 9};
+    int [] output = ArrayExamples.reversed (input);
+    assertArrayEquals (new int[] {9, 8, 7, 6}, output);
+  }
 }
 ```
 `test.sh`:
