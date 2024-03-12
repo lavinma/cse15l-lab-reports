@@ -30,8 +30,8 @@ I took another look at my method implementation and noticed a few different bugs
 <br/>------> ArrayTests.java
 <br/>------> test.sh
 
-Contents of each file before fixing the bug:
-`ArrayExamples.java`: 
+<br/>Contents of each file before fixing the bug:
+<br/>`ArrayExamples.java`: 
 ```
 static int[] reversed (int [] arr){
   int[] newArray = new int[arr.length];
