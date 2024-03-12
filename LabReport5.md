@@ -4,10 +4,10 @@
 ### Original post from student depicting symptom and their intepretation of the bug/failure-inducing input:
 ![Image](OrigPost.jpeg)
 ![Image](CompilingBash.jpeg)
-"I am having issues with my implementation of the reversed() method. I am having issues when I run my `ArrayTests.java` file. My method `reversed()` is supposed to return a new array with the elements of the input array in reverse order. My test case (shown above) told me that the first element in my return array differs from my expected array. Originally I thought I returned the array with the elements in the original order, but my test case shows that the element at the first index is 0, which isn't even an element ever in my input array. I can see that the failure-inducing input is my test case named testReversed2(), but I am still unsure of what the bug may be. Also, the command line I ran that triggered this bug was `bash test.sh`. `test.sh` was the bash scipt I created that compiled and ran ArrayTests.java for me. (I attached a screenshot of the script file)"
+"I am having issues with my implementation of the `reversed()` method. I am having issues when I run my `ArrayTests.java` file. My method `reversed()` is supposed to return a new array with the elements of the input array in reverse order. My test case (shown above) told me that the first element in my return array differs from my expected array. Originally I thought I returned the array with the elements in the original order, but my test case shows that the element at the first index is 0, which isn't even an element ever in my input array. I can see that the failure-inducing input is my test case named `testReversed2()`, but I am still unsure of what the bug may be. Also, the command line I ran that triggered this bug was `bash test.sh`. `test.sh` was the bash scipt I created that compiled and ran ArrayTests.java for me. (I attached a screenshot of the script file)"
 
 ### TA response:
-"Have you tried fully printing out the returned array you get from calling reversed()? Perhaps that could help you with debugging and fixing your method implementation."
+"Have you tried fully printing out the returned array you get from calling `reversed()`? Perhaps that could help you with debugging and fixing your method implementation."
 
 ### Student response:
 ![Image](Post2.jpeg)
@@ -56,6 +56,8 @@ javac *.java
 javac -cp ../libs/junit-4.13.2.jar:../libs/hamcrest-2.2.jar:. ArrayTests.java
 java -cp ../libs/junit-4.13.2.jar:../libs/hamcrest-2.2.jar:. org.junit.runner.JUnitCore ArrayTests
 ```
+<br/>The command line that triggered the bug was: `bash test.sh`
+<br/>This line triggered the bug because it executed the bash file that compiled and ran the `ArrayTests.java`. And, in that file was where the `reversed()` method was called and the bug was triggered.
 
 ## Part 2 - Reflection
 I learned a lot of new advice from one of my lab group mates. She was a junior and during one lab we talked about classes together and it was really cool hearing her experiences and her plans for the future. Because she was a few years ahead of me, she had new perspectives and advice I was able to use when picking new classes. 
