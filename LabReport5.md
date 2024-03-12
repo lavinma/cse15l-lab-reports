@@ -5,12 +5,12 @@ Original post from student depicting symptom and their intepretation of the bug/
 ![Image](OrigPost.jpeg)
 ![Image](CompilingBash.jpeg)
 "I am having issues with my implementation of the reversed() method. I am having issues when I run my `ArrayTests.java` file. 
-The directory structure is:
--> starter
-     -> ArrayExamples.java
-     -> ArrayTests.java
-     -> test.sh
-It is supposed to return a new array with the elements of the input array in reverse order. My test case (shown above) told me that the first element in my return array differs from my expected array. Originally I thought I returned the array with the elements in the original order, but my test case shows that the element at the first index is 0, which isn't even an element ever in my input array. I can see that the failure-inducing input is my test case named testReversed2(), but I am still unsure of what the bug may be. Also, the command line I ran that triggered this bug was `bash test.sh`. `test.sh` was the bash scipt I created that compiled and ran ArrayTests.java for me. (I attached a screenshot of the script file)"
+<br/>The directory structure is:
+<br/>-> starter
+     <br/>-> ArrayExamples.java
+     <br/>-> ArrayTests.java
+     <br/>-> test.sh
+<br/>It is supposed to return a new array with the elements of the input array in reverse order. My test case (shown above) told me that the first element in my return array differs from my expected array. Originally I thought I returned the array with the elements in the original order, but my test case shows that the element at the first index is 0, which isn't even an element ever in my input array. I can see that the failure-inducing input is my test case named testReversed2(), but I am still unsure of what the bug may be. Also, the command line I ran that triggered this bug was `bash test.sh`. `test.sh` was the bash scipt I created that compiled and ran ArrayTests.java for me. (I attached a screenshot of the script file)"
 
 TA response:
 <br/>"Have you tried fully printing out the returned array you get from calling reversed()? Perhaps that could help you with debugging and fixing your method implementation."
