@@ -49,6 +49,12 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 public class ArrayTests{
   @Test
+  public void testReversed1() {
+    int[] input1 = { };
+    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(i
+  }
+
+  @Test
   public void testReversed2() {
     int [] input = {6, 7, 8, 9};
     int [] output = ArrayExamples.reversed (input);
