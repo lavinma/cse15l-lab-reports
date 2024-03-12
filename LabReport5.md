@@ -53,7 +53,7 @@ public class ArrayTests{
   @Test
   public void testReversed1() {
     int[] input1 = { };
-    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(i
+    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
   }
 
   @Test
