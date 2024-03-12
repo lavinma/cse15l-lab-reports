@@ -36,7 +36,7 @@ I took another look at my method implementation and noticed a few different bugs
 static int[] reversed (int [] arr){
   int[] newArray = new int[arr.length];
   for (int i = 0; i < arr.length; i += 1){
-    arr[i] = newArray [arr.length- ¡ - 1];
+    arr[i] = newArray[arr.length- ¡ - 1];
   }
   return arr;
 }
@@ -58,6 +58,9 @@ java -cp ../libs/junit-4.13.2.jar:../libs/hamcrest-2.2.jar:. org.junit.runner.JU
 ```
 <br/>The command line that triggered the bug was: `bash test.sh`
 <br/>This line triggered the bug because it executed the bash file that compiled and ran the `ArrayTests.java`. And, in that file was where the `reversed()` method was called and the bug was triggered.
+
+<br/>What to edit to fix the bug:
+<br/>The bug can be fixed by calling `newArray[i] = arr[arr.length - i - 1];` instead of `arr[i] = newArray[arr.length- ¡ - 1];`. The new line would successfully initialize each element in the `newArray` to the element in the input array in reverse order. Additionally, the student would need to return this `newArray` at the end of the method instead of returning the input array. So this line could be fixed by calling `return newArray;` as opposed to the current `return arr;`.
 
 ## Part 2 - Reflection
 I learned a lot of new advice from one of my lab group mates. She was a junior and during one lab we talked about classes together and it was really cool hearing her experiences and her plans for the future. Because she was a few years ahead of me, she had new perspectives and advice I was able to use when picking new classes. 
